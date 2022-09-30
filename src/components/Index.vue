@@ -54,7 +54,7 @@ export default {
   <div class="fxcol h-screen flex justify-center items-center text-white">
     <div class="title text-5xl">저는&nbsp;</div>
     <div class="typed-text text-5xl font-bold">{{ typeValue }}</div>
-    <div class="cursor text-5xl w-1 ml-1 font-bold" :class="{'typing': typeStatus}">_</div>
+    <div class="cursor text-5xl w-1 ml-1 font-bold" :class="{'typing': typeStatus}">&nbsp;</div>
   </div>
 
   <!-- About -->
@@ -96,31 +96,32 @@ export default {
 </template>
 
 <style scoped>
-  @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
   .cursor {
-    /* display: inline-block; */
+    display: inline-block;
     animation: cursorBlink 1s infinite;
   }
 
   .typing {
-    animation: none; 
+    animation: none;
+    background: white;
   }
 
   @keyframes cursorBlink {
-    49% { color: rgb(218, 218, 218); }
-    50% { color: transparent; }
-    99% { color: transparent; }
+    0% { background-color: rgb(255, 255, 255); }
+    49% { background-color: rgb(255, 255, 255); }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
   }
 
   .tln {
     border-bottom: 0px solid white;
     border-top: 100px solid transparent;
-    border-right: 100vw solid white;
+    border-right: 99vw solid white;
     /* border-right: 20px solid transparent; */
   }
   .trn {
     border-bottom: 100px solid transparent;
-    border-right: 100vw solid white;
+    border-right: 99vw solid white;
   }
 
   @media (max-width: 768px) {
