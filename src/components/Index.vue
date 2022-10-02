@@ -4,7 +4,7 @@ export default {
     return {
       typeValue: '',
       typeStatus: false,
-      typeArr: ['학생 개발자입니다.', '프론트엔드 개발자입니다.', '개발을 좋아하는 학생입니다.'],
+      typeArr: ['학생 개발자입니다.', '풀스택 개발자입니다.', '만드는 것을 좋아합니다.'],
       typingSpeed: 130,
       erasingSpeed: 110,
       newTextDelay: 2000,
@@ -53,8 +53,10 @@ export default {
   <img class="h-screen blur-lg brightness-[0.4] fixed -z-10" src="../assets/codebg.png" />
   <div class="fxcol h-screen flex justify-center items-center text-white">
     <div class="title text-5xl">저는&nbsp;</div>
-    <div class="typed-text text-5xl font-bold">{{ typeValue }}</div>
-    <div class="cursor text-5xl w-1 ml-1 font-bold" :class="{'typing': typeStatus}">&nbsp;</div>
+    <span class="flex">
+      <div class="typed-text text-5xl font-bold">{{ typeValue }}</div>
+      <div class="cursor text-5xl w-[1.5px] ml-1 font-bold" :class="{'typing': typeStatus}">&nbsp;</div>
+    </span>
   </div>
 
   <!-- About -->
@@ -125,6 +127,7 @@ export default {
   }
 
   @media (max-width: 768px) {
+
     .cursor {
       visibility: hidden;
     }
