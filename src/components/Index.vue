@@ -72,7 +72,7 @@ export default {
 
   <!-- Spec -->
   <div class="h-screen flex flex-col justify-center items-center text-white">
-    <div class="about-title text-5xl font-bold">제가 배운 것들입니다.</div>
+    <div class="about-title text-5xl font-bold">제가 배우고 사용하는 것들입니다.</div>
 
     <div class="flex flex-wrap items-center mt-10 md:w-[1024px]">
         <img class="m-5 badge w-20 h-20 hover:brightness-50" src="../assets/html.png" />
@@ -80,7 +80,6 @@ export default {
         <img class="m-5 badge w-20 h-20 hover:brightness-50" src="../assets/js.png" />
         <img class="m-5 badge w-20 h-20 hover:brightness-50" src="../assets/tslogo.png" />
         <img class="m-5 badge w-20 h-20 hover:brightness-50" src="../assets/ns.png" />
-        <img class="m-5 badge w-20 h-20 hover:brightness-50" src="../assets/java.png" />
         <img class="m-5 badge w-20 h-20 hover:brightness-50" src="../assets/pylogo.png" />
         <img class="m-5 badge w-20 h-20 hover:brightness-50" src="../assets/utlogo.png" />
         <img class="m-5 badge w-20 h-20 hover:brightness-50" src="../assets/btstlogo.png" />
